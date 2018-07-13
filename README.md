@@ -10,7 +10,7 @@ how to set a shadowsocks on server
 > vim /etc/shadowsocks.json 
 
 the config is something like 
-···
+```
 {
 "server":"0.0.0.0",
 "server_port": 1234,
@@ -21,7 +21,7 @@ the config is something like
 "method":"camellia-256-cfb",
 "fast_open":"true"
 }
-···
+```
 ## give the proper right for the file
 >sudo chmod 755 /etc/shadowsocks.json
 
