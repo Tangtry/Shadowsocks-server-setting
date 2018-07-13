@@ -10,18 +10,18 @@ how to set a shadowsocks on server
 > vim /etc/shadowsocks.json 
 
 the config is something like 
-
->{
->"server":"0.0.0.0",
->"server_port": 1234,
->"local_address": "your_server_ipv4_address",
->"local_port":1080,
->"password": "password",
->"timeout":300,
->"method":"camellia-256-cfb",
->"fast_open":"true"
->}
-
+···
+{
+"server":"0.0.0.0",
+"server_port": 1234,
+"local_address": "your_server_ipv4_address",
+"local_port":1080,
+"password": "password",
+"timeout":300,
+"method":"camellia-256-cfb",
+"fast_open":"true"
+}
+···
 ## give the proper right for the file
 >sudo chmod 755 /etc/shadowsocks.json
 
