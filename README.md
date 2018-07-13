@@ -31,7 +31,8 @@ the config is something like
 
 ## ipv6 setting
 Use the service from [Hurrican](https://tunnelbroker.net/)
-![config pic](D:/Pictures/screenshot.png)
+And find the settings from here
+![config pic](https://github.com/Tangtry/Shadowsocks-server-setting/blob/master/screenshot.png)
 ```
 ifconfig sit0 up
 ifconfig sit0 inet6 tunnel ::tunnel_ipv4_address
