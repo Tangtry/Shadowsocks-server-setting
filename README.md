@@ -22,8 +22,23 @@ the config is something like
 "fast_open":"true"
 }
 ```
+
+If using ipv6, server should be 
+> "server": "::",
+
 ## give the proper right for the file
 >sudo chmod 755 /etc/shadowsocks.json
+
+## install chacha20 support
+```
+apt-get install build-essential
+wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz
+tar xf libsodium-1.0.10.tar.gz && cd libsodium-stable
+./configure && make -j4 && make install
+ldconfig
+```
+
+
 
 ## run it
 >sudo ssserver -c /etc/shadowsocks.json -d start
